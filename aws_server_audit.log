@@ -1,0 +1,12 @@
+20230318 19:09:18,ip-10-1-4-73,rdsadmin,localhost,8,1,QUERY,,'install plugin server_audit soname \'server_audit.so\'',0,,
+20230318 19:09:35,ip-10-1-4-73,rdsadmin,localhost,8,39,QUERY,,'SELECT @@GLOBAL.read_only',0,,
+20230318 19:09:47,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,301,40,QUERY,,'SELECT \n    timestamp, COUNT(tweet_id) AS Tweets\nFROM\n    tweet\nGROUP BY HOUR(timestamp)\nORDER BY COUNT(tweet_id) DESC\nLIMIT 10',0,,
+20230318 19:09:47,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,300,41,QUERY,,'SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 301',0,,
+20230318 19:14:02,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,301,268,QUERY,,'SELECT \n    timestamp, COUNT(tweet_id) AS Tweets\nFROM\n    tweet\nGROUP BY HOUR(timestamp)\nORDER BY COUNT(tweet_id) DESC\nLIMIT 10',0,,
+20230318 19:14:02,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,300,269,QUERY,,'SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 301',0,,
+20230318 19:14:02,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,300,270,QUERY,,'SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 0',0,,
+20230318 19:14:03,ip-10-1-4-73,admin,c-98-234-223-232.hsd1.ca.comcast.net,300,271,QUERY,,'SELECT st.* 
+20230318 19:14:20,ip-10-1-4-73,rdsadmin,localhost,8,290,QUERY,,'INSERT INTO mysql.rds_heartbeat2(id, value) values (1,1679166860423) ON DUPLICATE KEY UPDATE value = 1679166860423',0,,
+20230318 19:14:20,ip-10-1-4-73,rdsadmin,localhost,8,291,QUERY,,'SELECT 1',0,,
+20230318 19:14:20,ip-10-1-4-73,rdsadmin,localhost,8,292,QUERY,,'SELECT @@session.transaction_read_only',0,,
+20230318 19:14:20,ip-10-1-4-73,rdsadmin,localhost,8,293,QUERY,,'COMMIT',0,,
